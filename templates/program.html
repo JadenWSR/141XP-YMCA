@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>List of available YMCA Programs</h1>
+    <h2>
+    <ul>
+        <li><a href="{{ url_for('play') }}">Physical Learning Activities for Youth (PLAY)</a></li>
+        <li><a href="{{ url_for('yng') }}"> Youth & Government (Y&G)</a></li>
+        <li><a href="{{ url_for('yima') }}">Youth Institute of Media Arts (YIMA)</a></li>
+      </ul></h2>
+{% endblock %}
