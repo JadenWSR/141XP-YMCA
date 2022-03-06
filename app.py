@@ -11,7 +11,7 @@ app_data = {
     "name":         "YMCA",
     "description":  "A basic Flask app",
     "html_title":   "YMCA Research",
-    "project_name": "YMCA Research",
+    "project_name": "STATS 141XP YMCA Research",
 }
 
 
