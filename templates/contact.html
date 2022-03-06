@@ -1,59 +1,6 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<h1>About Us</h1>
-<p>We are a group of senior UCLA undergraduate students(graduating in 2022) with a major in Statistics.
-  This Website is built for our milestone project in Stats 141XP, Practice of Statistical Consulting.
-  In this course, our group will solve real data analysis problems for our wonderful community-based
-  client, Khathy Hoang from YMCA. The aim of this app is to demonstrate our analysis results of the
-  YMCA data achieved from dashboards created by using <em>Tableau</em>, a popular data visualization tool.</p>
-
-<p>If you have any comments or questions about our research project, please don't hesitate to reach out by filling out this contact form!</p>
-
-<h2>Contact</h2>
- 
-  {% if success %}
-    <p>Thank you for your message. We'll get back to you shortly.</p>
- 
-  {% else %}
- 
-    {% for message in form.name.errors %}
-      <div class="flash">{{ message }}</div>
-    {% endfor %}
- 
-    {% for message in form.email.errors %}
-      <div class="flash">{{ message }}</div>
-    {% endfor %}
- 
-    {% for message in form.subject.errors %}
-      <div class="flash">{{ message }}</div>
-    {% endfor %}
- 
-    {% for message in form.message.errors %}
-      <div class="flash">{{ message }}</div>
-    {% endfor %}
- 
-    <form action="{{ url_for('contact') }}" method=post>
-      {{ form.hidden_tag }}
- 
-      {{ form.name.label }}
-      {{ form.name }}
- 
-      {{ form.email.label }}
-      {{ form.email }}
- 
-      {{ form.subject.label }}
-      {{ form.subject }}
- 
-      {{ form.message.label }}
-      {{ form.message }}
- 
-      {{ form.submit }}
-    </form>
- 
-  {% endif %}
-
-
 <h1>Team member from Group (Bing Dwen Dwen)</h1>
 <ul>
   <li><a>ZIXUAN CHEN</a></li>

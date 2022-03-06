@@ -1,21 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, request, flash
-from flask_wtf import Form
-from wtforms import StringField, TextAreaField, SubmitField, validators
-from flask_mail import Mail, Message
-import os
+from flask import Flask, render_template
 
 DEVELOPMENT_ENV  = True
 
-mail = Mail()
-
 app = Flask(__name__)
-
-
-SECRET_KEY = os.urandom(32)
-app.config['SECRET_KEY'] = SECRET_KEY
 
 app_data = {
     "name":         "YMCA",
@@ -24,22 +14,6 @@ app_data = {
     "project_name": "YMCA Research",
 }
 
-
-class ContactForm(Form):
-  name = StringField("Name",  [validators.DataRequired("Please enter your name.")])
-  email = StringField("Email",  [validators.DataRequired("Please enter your email address."), validators.Email("Please enter your email address.")])
-  subject = StringField("Subject",  [validators.DataRequired("Please enter a subject.")])
-  message = TextAreaField("Message",  [validators.DataRequired("Please enter a message.")])
-  submit = SubmitField("Send")
-
-
-app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_PORT"] = 465
-app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = 'stats141xpbdd@gmail.com'
-app.config["MAIL_PASSWORD"] = 'BDD141141'
- 
-mail.init_app(app)
 
 @app.route('/')
 def index():
@@ -68,26 +42,9 @@ def service():
     return render_template('service.html', app_data=app_data)
 
 
-@app.route('/contact', methods=['GET', 'POST'])
+@app.route('/contact')
 def contact():
-  form = ContactForm()
- 
-  if request.method == 'POST':
-    if form.validate() == False:
-      flash('All fields are required.')
-      return render_template('contact.html', form=form, app_data=app_data)
-    else:
-      msg = Message(form.subject.data, sender='contact@example.com', recipients=['your_email@example.com'])
-      msg.body = """
-      From: %s &lt;%s&gt;
-      %s
-      """ % (form.name.data, form.email.data, form.message.data)
-      mail.send(msg)
- 
-      return render_template('contact.html', success=True)
- 
-  elif request.method == 'GET':
-    return render_template('contact.html', form=form, app_data=app_data)
+    return render_template('contact.html', app_data=app_data)
 
 @app.after_request
 def add_header(response):
