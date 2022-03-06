@@ -1,11 +1,70 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <h1>List of available YMCA Programs</h1>
-    <h2>
-    <ul>
-        <li><a href="{{ url_for('play') }}">Physical Learning Activities for Youth (PLAY)</a></li>
-        <li><a href="{{ url_for('yng') }}"> Youth & Government (Y&G)</a></li>
-        <li><a href="{{ url_for('yima') }}">Youth Institute of Media Arts (YIMA)</a></li>
-      </ul></h2>
+  <h1>List of available YMCA Programs</h1>
+
+  <section class="accordion">
+    <input type="checkbox" name="collapse" id="handle1">
+    <h2 class="handle">
+      <label for="handle1">Physical Learning Activities for Youth (PLAY)</label>
+    </h2>
+    <div class="content">
+      <p>YMCA PLAY (Physical Learning Activities for Youth) is designed to prevent childhood obesity and diabetes.
+        Standardized for easy measurement and outcome assessment, PLAY experts visit campuses every week of the
+        school year to deliver a high quality, research-based health and wellness curriculum. Aligned with the
+        California Physical Education Content Standards, PLAY is making a major impact at underfunded schools
+        in communities throughout Los Angeles.</p>
+      <ul>
+        <li><a href="{{ url_for('play') }}">Our Analysis Results</a></li>
+        <li><a href="https://www.ymcala.org/programs/education/play">Program YMCA Website</a></li>
+      </ul>
+  </div>
+
+  </section>
+  <section class="accordion">
+    <input type="checkbox" name="collapse2" id="handle2">
+    <h2 class="handle">
+      <label for="handle2">Youth & Government (Y&G)</label>
+    </h2>
+    <div class="content">
+      <p>California YMCA Youth and Government has provided outstanding statewide civic engagement, 
+        ducational and social experiences for over 73 years. The YMCA is a cause-driven organization
+        that focuses on youth development, healthy living and social responsibility with four major
+        core values of: caring, honesty, respect and responsibility. California YMCA Youth & Government
+        is an integral part of the YMCA movement. Our programs, run through partnering YMCAs, Schools
+        and Youth Organizations, have served over 100,000 students over the past 15 years alone. As we
+        start to recover at what is hopefully the tail end of the Covid-19 pandemic, we are back engaged
+        with over 56 delegations and 1700 students from across this great state of California. Our rebuilding
+        and reimagining efforts  will build, strengthen and encourage life skills and positive character traits.</p>
+
+      <p>The hands-on programs of California YMCA Youth & Government provide positive opportunities and experiences
+        for youth. Participants strengthen their communities by becoming civically engaged, active and responsible
+        contributors who are inspired and empowered to lead and create meaningful change.</p>
+      
+      <p>California YMCA Youth & Government prides itself in offering the following skills to help youth transition
+        and succeed with ease from middle school through college graduation.</p>
+
+      <ul>
+        <li><a href="{{ url_for('yng') }}">Our Analysis Results</a></li>
+        <li><a href="https://www.ymcala.org/locations/california-ymca-youth-government">Program YMCA Website</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="accordion">
+    <input type="checkbox" name="collapse2" id="handle3">
+    <h2 class="handle">
+      <label for="handle3">Youth Institute of Media Arts (YIMA)</label>
+    </h2>
+    <div class="content">
+      <p>The Youth Institute of Media Arts pairs mentors with youth to
+        develop leadership skills and promote higher education
+        readiness. Every graduate from our Youth Institute has been
+        accepted and enrolled in an accredited college/university.</p>
+
+      <ul>
+        <li><a href="{{ url_for('yima') }}">Our Analysis Results</a></li>
+      </ul>
+    </div>
+
 {% endblock %}
