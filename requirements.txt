@@ -1,7 +1,3 @@
 ###### Requirements without Version Specifiers ######
 flask
 gunicorn
-flask_wtf
-wtforms
-flask_mail
-os
