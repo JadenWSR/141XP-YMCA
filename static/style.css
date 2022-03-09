@@ -9,6 +9,11 @@ p {
   font-size: 18px;
 }
 
+.tableauPlaceholder{
+  position: relative;
+  left: -10vw;
+}
+
 a.app_name{
     color: #FFFFFF;
     text-decoration: none;
