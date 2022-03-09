@@ -4,6 +4,10 @@
     left: 0px;
 }
 
+p {
+  text-indent: 50px;
+}
+
 a.app_name{
     color: #FFFFFF;
     text-decoration: none;

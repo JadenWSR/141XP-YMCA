@@ -10,3 +10,7 @@ We are a group of senior UCLA undergraduate students(graduating in 2022) with a 
 - SHURUI WANG
 - XINDAN ZHANG
 - YI ZHANG
+
+# Abstract
+
+This research is mainly based on three youth programs offered by YMCA: **Physical Learning Activities for Youth (PLAY)**, **Youth & Government (Y&G)**, and **Youth Institute of Media Arts (YIMA)**. After cleaning and integrating the data provided by our client from YMCA, we have used Tableau to visualize the data and created several interactive dashboards. To better present our results and to better help our client, we have created a Website that contains everything we have obtained from this research. Our data analysis is conducted with a multi-faceted approach. The participants are divided into two independent groups, which are the new YMCA participants and the returning YMCA participants. By comparing the self-reported information from the participant groups before and after participating, we have analyzed the specific roles and effects of the three different YMCA programs and obtained more in-depth research and understanding of them.
