@@ -9,6 +9,23 @@ p {
   font-size: 18px;
 }
 
+.main-title{
+  font-family: Lucida Handwriting;
+}
+
+.lead{
+  font-family: Georgia;
+}
+
+ul li{
+  font-size: 18px;
+  margin-bottom: 5px;
+ }
+
+ul > li + li {
+  margin-bottom: 5px;
+}
+
 .tableauPlaceholder{
   position: relative;
   left: -10vw;
