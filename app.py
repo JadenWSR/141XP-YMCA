@@ -37,9 +37,9 @@ def yng():
     return render_template('Y&G.html', app_data=app_data)
 
 
-@app.route('/service')
+@app.route('/results')
 def service():
-    return render_template('service.html', app_data=app_data)
+    return render_template('Results.html', app_data=app_data)
 
 
 @app.route('/contact')

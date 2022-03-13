@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="j1">
+  <p class="ymca-intro">Through the above Exploratory Data Analysis, we have a more in-depth and comprehensive understanding of these three programs of YMCA.
+    YMCA creates opportunities for people to improve their lives and their communities. Through empowering
+    young people, improving individual and community well-being, and inspiring action aimed to create meaningful
+    change across the country.</p>
+  </div>
+  <h1>Conclusion</h1>
+
+  <section class="accordion">
+    <input type="checkbox" name="collapse" id="handle1">
+    <h2 class="handle">
+      <label for="handle1">Physical Learning Activities for Youth (PLAY)</label>
+    </h2>
+    <div class="content">
+      <p>
+        From Analysis, we found that the participants who participated in the PLAY generally showed great enthusiasm for physical
+        activities, which indeed help with children's health. Also, since 10 YMCA branches carry out PLAY in surrounding schools,
+        concentrated in coastal areas, we reasonably guess that the number of participants in the PLAY program may be related to
+        the number of local schools and branches, the population, and the district's location (the distance from the downtown).
+        This may be a problem that needs to be considered when selecting a site for YMCA: YMCA can choose a site closer to the urban
+        area or more populous school district, which will help the promotion of the program. When YMCA is designing PLAY activities,
+        they do not need to conduct the activities too frequently but to increase the depth and efficiency of each single daily activity. 
+      </p>
+
+  </div>
+
+  </section>
+  <section class="accordion">
+    <input type="checkbox" name="collapse2" id="handle2">
+    <h2 class="handle">
+      <label for="handle2">Youth & Government (Y&G)</label>
+    </h2>
+    <div class="content">
+      <p> From our previous analysis, we found that most participants think that the program has helped them develop their
+        college-level skills and employability skills, which confirmed that the effect of this program is significant. Meanwhile,
+        the positive attitude of voting of participants from the vote distribution also confirmed that the program helps youth become
+        civically engaged and it plays a great role in improving their social responsibility. But while most of the participants had
+        volunteered or had public meetings, there were some execution and teamwork (leadership) issues, such as less than half of
+        them have worked with others to improve a condition in their neighborhoods. This is a problem that needs to be solved by the
+        youth and government program in the future, in order for youth to strengthen their communities as well as contribute to society.</p>
+
+    </div>
+  </section>
+
+  <section class="accordion">
+    <input type="checkbox" name="collapse2" id="handle3">
+    <h2 class="handle">
+      <label for="handle3">Youth Institute of Media Arts (YIMA)</label>
+    </h2>
+    <div class="content">
+      <p>Every graduate from the Youth Institute has been accepted and enrolled in
+        an accredited college/university. From Analysis, we found that both new participants and returning participants
+        all acquire the knowledge of written skills at various levels. We also found that returning participants are more
+        skilled in organizing and discriminating information, and the returning participants have decreased in the
+        number of no skills level on each social media skill set, which confirmed that YIMA indeed helps youth with
+        their higher education readiness, and improve their social media skills level. In general, the vast majority of
+        new participants said they would recommend the YIMA program to their peers, which suggests that for new
+        participants, the YIMA program can help them improve themselves effectively. YMCA YIMA can intensify its
+        promotion efforts so that this program can help more young students.</p>
+    </div>
+
+
+    <h1>Limitations</h1>
+    <ul>
+      <li>Due to the time limit, we focused more on the given datasets. If we have more time, we will look for and take other datasets into
+        account to further support our conclusion. For example, we could look for a supplemental survey dataset to analyze more details about
+        the student background knowledge set before entering each program.</li>
+      <li>There might be some differences in teaching resources and mentor friendliness between YMCA branches in different regions. Also,
+        there might be some unique individual variations student by student in background knowledge, learning effectiveness, and future plan
+        that may affect their feeling about the programs.  Since we lack data and it would be too complicated to take these into account,  we
+        choose to ignore those differences.</li>
+      <li>To further support our conclusion, it is better to have a larger sample size. However, the dataset that we looked into has a
+        very small data size, which is lower than 50. In this case, we may have to settle for less conclusive results. If we have more
+        samples, some of our conclusions might have changed. This is hard to say at this moment.</li>
+    </ul> 
+
+{% endblock %}
